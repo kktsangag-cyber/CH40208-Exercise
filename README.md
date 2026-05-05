@@ -7,20 +7,20 @@ This repository contains a collection of exercises developed during the self-stu
 
 ## Course Topics
 Topics I have covered:
-Module 1: Basic NumPy and Matplotlib
-Module 2: Geometry Optimisation
-Module 3: Molecular Dynamics and Monte Carlo Simulation
+- Module 1: Basic NumPy and Matplotlib
+- Module 2: Geometry Optimisation
+- Module 3: Molecular Dynamics and Monte Carlo Simulation
 
 Topics I have not yet covered:
-Module 4: Vectors and Matrices
-Module 5: Example Coursework Notebooks
+- Module 4: Vectors and Matrices
+- Module 5: Example Coursework Notebooks
 
 
 
 ## Environment & Libraries
 To run the notebooks in this repository, you will need:
-Python 3.x
-Core Libraries: NumPy, Matplotlib, SciPy
+- Python 3.x
+- Core Libraries: NumPy, Matplotlib, SciPy
 
 
 
