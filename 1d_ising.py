@@ -161,4 +161,5 @@ if __name__ == "__main__":
     plt.title("Ising Model (N=4): Simulation vs Theory")
     plt.legend()
     plt.grid(True)
+    plt.savefig('ising_model_comparison.png', dpi=300)
     plt.show()
