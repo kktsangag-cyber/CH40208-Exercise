@@ -59,10 +59,16 @@ This repository contains a collection of exercises developed during the self-stu
 #### **Module 4**: Vectors and Matrices
 #### **Module 5**: Adanced Coursework Notebooks
 
+---
+<br>
+
 ## Environment & Libraries
 To run the notebooks in this repository, you will need:
 - **Python 3.x**
 - **Core Libraries**: `NumPy`, `Matplotlib`, `SciPy`
+
+---
+<br>
 
 ## References
 - **Course Site**: [CH40208 Topics in Computational Chemistry](https://pythoninchemistry.org/ch40208/introduction/about_this_book.html)
