@@ -11,14 +11,18 @@ This repository contains a collection of exercises developed during the self-stu
 
 ### ✅ Topics Covered
 #### **Module 1**: Basic NumPy and Matplotlib
+<<<<<<< HEAD
 
 <br>
 
 ---
+=======
+>>>>>>> fac6d1c (update the READ.md)
 #### **Module 2**: Geometry Optimisation & Potential Energy Surfaces (PES)
 *    Gradient Descent Method
 *    The Newton-Raphson Method
 *    Harmonic Potential and Lennard-Jones Potential
+<<<<<<< HEAD
 <p align="center">
   <img src="lennard_jones_optimization.png" width="600" />
   <br>
@@ -54,13 +58,21 @@ This repository contains a collection of exercises developed during the self-stu
 <br>
 
 ---
+=======
+#### **Module 3**: Molecular Dynamics and Monte Carlo Simulation
+*    Euler’s Method and The Velocity Verlet Method
+*    The Metropolis Algorithm
+>>>>>>> fac6d1c (update the READ.md)
 
 ### ⏳ Topics To Be Covered
 #### **Module 4**: Vectors and Matrices
 #### **Module 5**: Adanced Coursework Notebooks
+<<<<<<< HEAD
 
 ---
 <br>
+=======
+>>>>>>> fac6d1c (update the READ.md)
 
 ## Environment & Libraries
 To run the notebooks in this repository, you will need:
