@@ -1,12 +1,21 @@
 # CH40208-Exercise
+<br>
 
 ## Introduction
+
 This repository contains a collection of exercises developed during the self-study of **Computational Chemistry**. The content follows the curriculum of the **CH40208** online resource, covering topics from basic NumPy skills to fundamental molecular modeling.
+
+---
+<br>
 
 ## Course Topics
 
 ### ✅ Topics Covered
 #### **Module 1**: Basic NumPy and Matplotlib
+
+<br>
+
+---
 #### **Module 2**: Geometry Optimisation & Potential Energy Surfaces (PES)
 *    Gradient Descent Method
 *    The Newton-Raphson Method
@@ -16,6 +25,9 @@ This repository contains a collection of exercises developed during the self-stu
   <br>
   <em><b>Figure 1:</b> Convergence comparison between Newton-Raphson (blue) and Gradient Descent (orange).</em>
 </p>
+<br>
+
+---
 
 #### **Module 3**: Molecular Dynamics and Monte Carlo Simulation
 *    Euler’s Method and The Velocity Verlet Method
@@ -40,6 +52,9 @@ This repository contains a collection of exercises developed during the self-stu
   <br>
   <em><b>Figure 2:</b> Metropolis simulation results (dots) plotted against the exact theoretical solution (line).</em>
 </p>
+<br>
+
+---
 
 ### ⏳ Topics To Be Covered
 #### **Module 4**: Vectors and Matrices
