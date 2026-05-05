@@ -75,4 +75,5 @@ if __name__ == "__main__":
     plt.ylabel('Final Angle (theta)')
     plt.title('Dihedral Angle Optimization')
     plt.legend()
+    plt.grid(True, linestyle='--')
     plt.show()

@@ -151,6 +151,7 @@ if __name__ == "__main__":
     plt.ylabel('Energy (J)')
     plt.title('Energy vs Time')
     plt.legend()
+    plt.savefig("Euler_Integration.png", dpi=300)
     plt.show(block=False)
 
 # Exercise 3c
@@ -184,7 +185,7 @@ if __name__ == "__main__":
         pos, vel, acc = verlet_integration(pos, vel, acc, delta_t)
         potential_energy_3.append(p_e_s_diatomic(k_J_per_Angstrom_square, pos, r_0))
         kinetic_energy_3.append(0.5 * mass * (vel * 1e-10)**2) # Convert from (Å/s)^2 to (m/s)^2
-        total_energy_3.append(potential_energy_3[t] + kinetic_energy_3[t])
+        total_energy_3.append(potential_energy_3[-1] + kinetic_energy_3[-1])
     plt.plot(time, potential_energy_3, label='Potential Energy')
     plt.plot(time, kinetic_energy_3, label='Kinetic Energy')
     plt.plot(time, total_energy_3, label='Total Energy')
@@ -192,4 +193,5 @@ if __name__ == "__main__":
     plt.ylabel('Energy (J)')
     plt.title('Energy vs Time')
     plt.legend()
+    plt.savefig("Verlet_Integration.png", dpi=300)
     plt.show()

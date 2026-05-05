@@ -137,7 +137,7 @@ def lennard_jones_second_derivative(r, A, B):
     """
     return 156 * A / r**14 - 42 * B / r**8
 
-def lennard_jones_newton_raphson(r, A=1e5, B=40):
+def lennard_jones_newton_raphson(r, A=1e5, B=40, max_step=0.1):
     """
     Compute the root of the Lennard-Jones potential energy using the Newton-Raphson method.
 
@@ -157,7 +157,12 @@ def lennard_jones_newton_raphson(r, A=1e5, B=40):
         f_prime = lennard_jones_second_derivative(r, A, B)
         if np.abs(f).any() < 0.001:
             break
-        r = r - f / f_prime
+        step = f / f_prime
+        step = np.clip(step, -max_step, max_step)
+        if f_prime <= 0:
+            r = r - 0.1 * np.sign(f)
+        else:
+            r = r - step
         r_hist.append(r)
         grad_hist.append(f)
         iteration.append(i + 1)
@@ -189,4 +194,18 @@ if __name__ == "__main__":
     plt.ylabel('Distance (r)')
     plt.title('Lennard-Jones Newton-Raphson')
     plt.legend()
+    plt.show(block=False)
+
+# Bonus Starting point = 4.2
+if __name__ == "__main__":
+    r_bon_g, r_hist_gradient_bon_g, grad_hist_gradient_bon_g, iter_hist_gradient_bon_g = lennard_jones_gradient(4.2, ran=50, lr=100, t=0.001)
+    r_bon_nr, r_hist_gradient_bon_nr, grad_hist_gradient_bon_nr, iter_hist_gradient_bon_nr = lennard_jones_newton_raphson(4.2, A=1e5, B=40)
+    plt.figure(6)
+    plt.plot(iter_hist_gradient_bon_nr, r_hist_gradient_bon_nr, 'o-', label='Lennard-Jones Newton-Raphson')
+    plt.plot(iter_hist_gradient_bon_g, r_hist_gradient_bon_g, 'x-', label='Lennard-Jones Gradient Descent')
+    plt.xlabel('Iteration')
+    plt.ylabel('Distance (r)')
+    plt.title('Lennard-Jones Optimization')
+    plt.legend()
+    plt.savefig("lennard_jones_optimization.png", dpi=300)
     plt.show()
