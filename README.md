@@ -11,9 +11,35 @@ This repository contains a collection of exercises developed during the self-stu
 *    Gradient Descent Method
 *    The Newton-Raphson Method
 *    Harmonic Potential and Lennard-Jones Potential
+<p align="center">
+  <img src="lennard_jones_optimization.png" width="600" />
+  <br>
+  <em><b>Figure 1:</b> Convergence comparison between Newton-Raphson (blue) and Gradient Descent (orange).</em>
+</p>
+
 #### **Module 3**: Molecular Dynamics and Monte Carlo Simulation
 *    Euler’s Method and The Velocity Verlet Method
+<table style="width: 100%; text-align: center;">
+  <tr>
+    <th style="width: 50%;">Euler Method (Energy Not Conserved)</th>
+    <th style="width: 50%;">Velocity Verlet (Energy Conserved)</th>
+  </tr>
+  <tr>
+    <td><img src="Euler_Integration.png" width="100%" /></td>
+    <td><img src="Verlet_Integration.png" width="100%" /></td>
+  </tr>
+  <tr>
+    <td><em>Note the upward drift in total energy (green line) due to integration error.</em></td>
+    <td><em>Total energy remains stable, demonstrating a symplectic integrator.</em></td>
+  </tr>
+</table>
+
 *    The Metropolis Algorithm
+<p align="center">
+  <img src="ising_model_comparison.png" width="600" />
+  <br>
+  <em><b>Figure 2:</b> Metropolis simulation results (dots) plotted against the exact theoretical solution (line).</em>
+</p>
 
 ### ⏳ Topics To Be Covered
 #### **Module 4**: Vectors and Matrices
