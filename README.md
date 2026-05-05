@@ -1,5 +1,4 @@
 # CH40208-Exercise
-<br>
 
 ## Introduction
 
