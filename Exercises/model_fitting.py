@@ -5,7 +5,7 @@ import scipy.optimize as opt
 # Exercise 1
 # Part a
 plt.figure(1)
-path_data1 = '/Users/jasontsang/Documents/VS Code/NumPy and SciPy/CH40208 Exercise/model_fitting_data1.txt'
+path_data1 = '/Users/jasontsang/Documents/VS Code/NumPy and SciPy/CH40208 Exercise/Data/model_fitting_data1.txt'
 temperature, equilibrium_constant = np.loadtxt(path_data1, unpack=True)
 
 # Part b
@@ -63,7 +63,7 @@ plt.show(block=False)
 
 # Exercise 2
 # Part a
-path_data2 = '/Users/jasontsang/Documents/VS Code/NumPy and SciPy/CH40208 Exercise/model_fitting_data2.txt'
+path_data2 = '/Users/jasontsang/Documents/VS Code/NumPy and SciPy/CH40208 Exercise/Data/model_fitting_data2.txt'
 time, concentration = np.loadtxt(path_data2, unpack=True)
 plt.figure(2)
 plt.plot(time, concentration, 'o', label='Data')

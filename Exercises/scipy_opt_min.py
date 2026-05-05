@@ -5,7 +5,7 @@ from scipy.optimize import minimize
 # Exercise 1
 # Part a
 
-from synoptic_exercise_optimization import lennard_jones
+from Exercises.synoptic_exercise_optimization import lennard_jones
 
 # Part b
 
